@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=3 uid="uid://dpdc78y6brpm0"]
+
+[ext_resource type="Texture2D" uid="uid://c4jejnu0lgiad" path="res://pexels-francesco-ungaro-998641.jpg" id="1_3ltln"]
+[ext_resource type="PackedScene" uid="uid://bvu536hbmlung" path="res://cleaner.tscn" id="1_cl2a4"]
+[ext_resource type="PackedScene" uid="uid://h2obsoiohsv4" path="res://planet.tscn" id="2_cl5o5"]
+[ext_resource type="Texture2D" uid="uid://bkwws68n23h0v" path="res://genericItem_color_100.png" id="3_naiy0"]
+[ext_resource type="Texture2D" uid="uid://bdi6iy0nh3as1" path="res://genericItem_color_124.png" id="4_3j616"]
+[ext_resource type="Texture2D" uid="uid://bpug2f8wifbq3" path="res://genericItem_color_110.png" id="5_chm7x"]
+[ext_resource type="Texture2D" uid="uid://cxthe7svqbtgy" path="res://genericItem_color_002.png" id="6_5w0ep"]
+[ext_resource type="Texture2D" uid="uid://ccvkq04ygav6j" path="res://genericItem_color_112.png" id="7_qvoxi"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+z_index = -100
+position = Vector2(1751.5, 1112.5)
+scale = Vector2(0.606833, 0.61025)
+texture = ExtResource("1_3ltln")
+
+[node name="Cleaner" parent="." instance=ExtResource("1_cl2a4")]
+position = Vector2(2121, 431)
+
+[node name="Planet" parent="." instance=ExtResource("2_cl5o5")]
+position = Vector2(1977, 1225)
+scale = Vector2(2.12, 2.12)
+disable_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(858, 371)
+texture = ExtResource("3_naiy0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(2689, 1062)
+texture = ExtResource("4_3j616")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(788, 1276)
+texture = ExtResource("5_chm7x")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(1437, 394)
+texture = ExtResource("6_5w0ep")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(2797, 157)
+texture = ExtResource("7_qvoxi")

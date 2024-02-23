@@ -1,14 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1upafe6u0fim"]
+[gd_scene load_steps=5 format=3 uid="uid://b1upafe6u0fim"]
 
+[ext_resource type="Script" path="res://basic_gun.gd" id="1_axoqo"]
 [ext_resource type="Texture2D" uid="uid://bc7gijsn5u5c1" path="res://spaceStation_009.png" id="1_gyqqr"]
+[ext_resource type="PackedScene" uid="uid://cvmv6sh8yg7o3" path="res://missile_1.tscn" id="2_3l0kw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28g2h"]
 size = Vector2(64, 88)
 
-[node name="BasicGun" type="RigidBody2D"]
+[node name="BasicGun" type="Node2D"]
+script = ExtResource("1_axoqo")
+missile_scene = ExtResource("2_3l0kw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_gyqqr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_28g2h")
+
+[node name="MissileSpawnPoint" type="Marker2D" parent="."]
+position = Vector2(-20, 0)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://h2obsoiohsv4"]
+
+[ext_resource type="Texture2D" uid="uid://cvbf821k37lhu" path="res://spaceMeteors_001.png" id="1_jehsm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x2vw5"]
+radius = 10.3375
+
+[node name="Planet" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jehsm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 8)
+rotation = -0.00472035
+scale = Vector2(20.7984, 21.4871)
+shape = SubResource("CircleShape2D_x2vw5")
