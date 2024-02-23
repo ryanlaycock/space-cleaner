@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1upafe6u0fim"]
+
+[ext_resource type="Texture2D" uid="uid://bc7gijsn5u5c1" path="res://spaceStation_009.png" id="1_gyqqr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28g2h"]
+size = Vector2(64, 88)
+
+[node name="BasicGun" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gyqqr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_28g2h")

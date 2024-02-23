@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://j14u4jdhawuc"]
+
+[ext_resource type="Texture2D" uid="uid://p3hu7toubrg6" path="res://spaceStation_024.png" id="1_8wtgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eg748"]
+size = Vector2(344, 80)
+
+[node name="Body1" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8wtgd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eg748")
